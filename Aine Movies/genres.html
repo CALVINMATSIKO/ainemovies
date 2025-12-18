@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres - Aine Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Aine Movies</a></div>
+            <div class="nav-links">
+                <a href="index.html#movies">Movies</a>
+                <a href="index.html#tv">TV Shows</a>
+                <a href="genres.html">Genres</a>
+                <a href="search.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="genres-section">
+            <h1>Browse by Genre</h1>
+            <div class="genre-tabs">
+                <button class="tab-button active" data-type="movie">Movies</button>
+                <button class="tab-button" data-type="tv">TV Shows</button>
+            </div>
+            <div id="genres-list" class="genres-list"></div>
+            <div id="genre-movies" class="movie-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p>This site does not host any videos. Content is sourced from third-party providers. TMDB is used for metadata only.</p>
+        <p>&copy; 2023 Aine Movies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

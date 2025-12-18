@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - Aine Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Aine Movies</a></div>
+            <div class="nav-links">
+                <a href="index.html#movies">Movies</a>
+                <a href="index.html#tv">TV Shows</a>
+                <a href="search.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="player-section">
+            <div class="player-container">
+                <video id="video-player" class="video-js vjs-default-skin" controls preload="auto" width="100%" height="auto">
+                    <source id="video-source" src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="player-info">
+                <h1 id="player-title"></h1>
+                <div class="quality-selector">
+                    <label for="quality">Quality:</label>
+                    <select id="quality">
+                        <option value="auto">Auto</option>
+                        <option value="360p">360p</option>
+                        <option value="480p">480p</option>
+                        <option value="720p">720p</option>
+                        <option value="1080p">1080p</option>
+                    </select>
+                </div>
+                <button id="report-link">Report Broken Link</button>
+            </div>
+        </section>
+        <aside class="related-videos">
+            <h2>Related Videos</h2>
+            <div id="related-list" class="movie-grid"></div>
+        </aside>
+    </main>
+    <footer>
+        <p>This site does not host any videos. Content is sourced from third-party providers. TMDB is used for metadata only.</p>
+        <p>&copy; 2023 Aine Movies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

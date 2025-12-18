@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details - Aine Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">Aine Movies</a></div>
+            <div class="nav-links">
+                <a href="index.html#movies">Movies</a>
+                <a href="index.html#tv">TV Shows</a>
+                <a href="search.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="movie-details">
+            <div class="poster">
+                <img id="movie-poster" src="" alt="Movie Poster">
+            </div>
+            <div class="info">
+                <h1 id="movie-title"></h1>
+                <div class="meta">
+                    <span id="movie-rating"></span>
+                    <span id="movie-release"></span>
+                    <span id="movie-runtime"></span>
+                    <span id="movie-genres"></span>
+                </div>
+                <p id="movie-overview"></p>
+                <button id="watch-now" class="watch-now">Watch Now</button>
+            </div>
+        </section>
+        <section class="cast">
+            <h2>Cast</h2>
+            <div id="cast-list" class="cast-list"></div>
+        </section>
+        <section class="similar">
+            <h2>Similar Movies</h2>
+            <div id="similar-list" class="movie-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p>This site does not host any videos. Content is sourced from third-party providers. TMDB is used for metadata only.</p>
+        <p>&copy; 2023 Aine Movies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
