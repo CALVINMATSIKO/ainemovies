@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aine Movies - Free Streaming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Aine Movies</div>
+            <div class="nav-links">
+                <a href="#movies">Movies</a>
+                <a href="#tv">TV Shows</a>
+                <a href="genres.html">Genres</a>
+                <a href="search.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Aine Movies</h1>
+            <p>Stream thousands of movies and TV shows for free</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for movies, TV shows...">
+            </div>
+        </section>
+
+        <section id="movies" class="content-section">
+            <h2>Movies</h2>
+            <div class="sub-nav">
+                <a href="#now-playing" class="active">Now Playing</a>
+                <a href="#popular-movies">Popular</a>
+                <a href="#top-rated-movies">Top Rated</a>
+                <a href="#upcoming-movies">Upcoming</a>
+            </div>
+            <div id="now-playing" class="movie-grid active-section"></div>
+            <div id="popular-movies" class="movie-grid"></div>
+            <div id="top-rated-movies" class="movie-grid"></div>
+            <div id="upcoming-movies" class="movie-grid"></div>
+        </section>
+
+        <section id="tv" class="content-section">
+            <h2>TV Shows</h2>
+            <div class="sub-nav">
+                <a href="#popular-tv" class="active">Popular</a>
+                <a href="#top-rated-tv">Top Rated</a>
+                <a href="#airing-today">Airing Today</a>
+            </div>
+            <div id="popular-tv" class="movie-grid active-section"></div>
+            <div id="top-rated-tv" class="movie-grid"></div>
+            <div id="airing-today" class="movie-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p>This site does not host any videos. Content is sourced from third-party providers. TMDB is used for metadata only.</p>
+        <p>&copy; 2023 - 2026. Ainebyoona Calvin Matsiko, Aine Movies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
